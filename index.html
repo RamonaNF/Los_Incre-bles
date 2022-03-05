@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <header class="header" class="wrapper">
+      <a class="header" id="logo" href="./index.html"> <img src="logoT.png" style="width: 100px; height:55px"> </a>
+      <span class="header" id="nombre-página"> Themis </span>
+      <nav class="header" id="navigation">
+        <a href="#form" class="header"> Denuncia </a>
+        <!--<a href="./signin.html" class="header" id="ingresar"> Ingresar </a>-->
+        <a href="./info.html" class="header"> Información </a>
+        <a href="./contact.html" class="header"> Contacto </a>
+        <a href="./meet-us.html" class="header"> Conócenos </a>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <div id="imagen-texto">
+        <img src="./denuncia.png" width="100%" height="25%"/>
+        <a href="#form" class="boton"> DENUNCIAR </a>
+      </div>
+      <h3> La corrupción es el abuso de poder público para obtener beneficio particular. Tú puedes detenerlo. </h3>
+  
+      <br>
+      
+      <div id="form">
+        <form action="https://formsubmit.co/a01423595@tec.mx" method="post">
+    			<h2>Haz tu Denuncia</h2>
+          <h3> Datos del Denunciante </h3>
+    			<label for="Denunciante"> Nombre (Opcional) </label>
+    			<input type="text" id="Denunciante" name="Denunciante" placeholder="Ingresa tu nombre">
+    			<br>
+  
+          <label for="Sexo"> Sexo:  </label>
+            <label for=Masculino> Masculino </label>
+            <input type="radio" id="Masculino" name="Sexo"> 
+            <label for="Femenino"> Femenino </label>
+            <input type="radio" id="Femenino" name="Sexo">
+            <label for="No decir"> Prefiero no decir </label>
+            <input type="radio" id="No decir" name="Sexo">
+            <br>
+
+					<label for="Edad"> Edad (opcional) </label>
+          <input type="text" id="Edad" name="Edad">
+          <br>
+					
+          <label for="Ocupación"> Ocupación (opcional) </label>
+          <input type="text" id="Ocupación" name="Ocupación">
+          <br>
+    
+          <label for="Escolaridad"> Escolaridad (opcional) </label>      
+          <input type="text" id="Escolaridad" name="Escolaridad">
+          <br>
+  
+          <label for="Correo"> Correo (opcional) </label>
+          <input type="email" id="Correo" name="Correo">
+          <br>
+    
+          <h3> Datos del o de los Denunciados </h3>
+          <label for="Denunciado"> Nombre (si no sabe, dejar en blanco) </label>
+    			<input type="text" id="Denunciado" name="Denunciado" placeholder = "Sepárelos con comas">
+    			<br>  
+  
+          <label for="Ocupación-Den"> Ocupación (si no sabe, dejar en blanco) </label>
+          <input type="text" id="Ocupación-Den" name="Ocupación-Den">
+          <br>
+  
+          <label for="Trabajo"> Lugar de trabajo (si no sabe, dejar en blanco) </label>
+          <input type="text" id="Trabajo" name="Trabajo">
+          <br>
+  
+          
+          <h3> Descripción de la Denuncia </h3>
+          
+          <label for="Lugar"> Lugar en donde ocurrió </label>
+    			<input type="text" id="Lugar" name="Lugar" required>
+    			<br>
+    			
+    			<label for="Fecha"> Fecha en que ocurrió en formato </label>
+    			<input type="date" id="Fecha" name="Fecha" required>
+    			<br>        
+          
+    			<label for="Sector"> Sector al que pertenece la denuncia </label>
+    			<select id="Sector" name="Sector">
+    				<option value="Seleccionar"> Seleccionar </option>
+    				<option value="Financiero"> Financiero </option>
+            <option value="Tecnológico"> Tecnológico </option>
+            <option value="Alimenticio"> Alimenticio </option>
+    				<option value="Educativo"> Educativo </option>
+    				<option value="Salud"> Salud </option>
+						<option value="Empresarial"> Empresarial </option>
+						<option value="Gubernamental"> Gubernamental </option>
+    				<option value="Otro"> Otro </option>
+    			</select>
+          <br>
+          
+          <label for="Descripción"> Descripción de la Denuncia </label>
+          <textarea id="Descripción" name="Descripción" required></textarea>
+          <br>
+          <label for="Evidencia"> Adjuntar Evidencia (fotos, videos, correos) </label>
+          <input type="file" id="Evidencia" name="Evidencia">
+          <br>
+          <br>
+          <input type="submit" onclick="important()" value="ENVIAR DENUNCIA">
+          <input type="reset" value="BORRAR TODO">
+
+          <!-- BUSCAR CÓMO LIGAR EL TEXTO CON SU LINK -->
+          <script> 
+            function important(){
+              confirm("Estoy de acuerdo con las políticas de privacidad (LINK) que se establecen conforme la Ley de Protección de Datos Personales (https://www.gob.mx/indesol/documentos/ley-general-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados) y descargo de responsabilidad en caso de que la denuncia se descarte y no sea investigada.")
+            }
+        </script>
+          
+    		</form>
+      </div>
+      <br>
+      <script src="script.js"></script>
+
+    </main>
+    
+    <footer class="foot">
+      <p id="quote-final" class="foot"> EL CAMBIO EMPIEZA CONTIGO. ¡LUCHEMOS POR UN MÉXICO MEJOR! </p>
+    </footer>
+    
+  </body>
+  
+</html>
+

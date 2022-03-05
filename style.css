@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'Fredoka', 'Arial', serif;
+}
+
+* {
+  font-family: Arial,serif;
+  background-color: #A7B2BA;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+
+#imagen-texto {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.boton {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  line-height: 10px;
+  transform: translate(-50%,-50%);
+  border: 10px;
+  padding: 5px;
+  background-color: #A7B2BA;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header, .foot  {
+  background-color:#494A53;
+  color: white;
+  font-weight: bold;
+  width:100%;
+}
+
+.header {
+  height: 100px;
+   z-index: 10; 
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-allign: center;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+  overflow:hidden;
+}
+
+
+.header #nombre-página {
+  font-size: 30px;
+  line-height: 50px;
+  height: 100%;
+  width: 100%;
+  text-allign: center;
+  padding: 10px, 20px;
+}
+
+.header #navigation {
+  float: right;
+  display: inline-block;
+  padding: 10px, 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.header nav a{
+  padding: 10px 20px;
+  border: 10px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.header nav a:hover {
+  background:#CE9E83;
+}
+
+#form {
+  background-color:white;
+}
+
+.did-you-know{
+  background-color: rgba(206, 158, 131, 1);
+  padding: 15px;
+  font-size: 20px;
+  width: 98%;
+  text-align: center;
+}
+
+.concepts{
+  padding: 40px;
+  width: 98%;
+  text-align: center;
+}
+.concepts_txt{
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 98%;
+}
+
+.corrupcion {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lista{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/** Footer **/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(https://replit.com/@Annette-PamelaP/Hackathon#fondo-formulario.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .degradado-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.footer .ejefooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .contenido-footer{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer .contenido-footer .titulo-footer{
+    width: 50%;
+    margin: auto;
+    border:2px solid #212630;
+    padding:15px;
+}
+.footer .contenido-footer .titulo-footer h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #212630;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .contenido-footer .titulo-footer h3{
+    font-size: 25px;
+    font-weight: 400;
+    color:#212630;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .contenido-footer .titulo-footer hr{
+    background:#212630;
+    height: 2px;
+    width: 80%;
+    margin:auto;
+}
+.footer .contenido-formulario{
+    width: 60%;
+    margin: 20px auto;
+    background: #212630;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid #0e2043;
+}
+.footer .contenido-formulario #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .contenido-formulario #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: #171717;
+    margin: 30px 0px 10px 0px;
+}
+.footer .contenido-formulario #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid #0e2043;
+    text-align: center;
+    font-size: 18px;
+    color: #171717;
+}
+.footer .contenido-formulario #formulario textarea{
+    width: 80%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid #0e2043;
+    font-size: 15px;
+    color: #171717;
+}
+.footer .contenido-formulario #formulario .submit{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contenido-formulario #formulario .reset{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contenido-formulario #formulario button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #0e2043;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .contenido-formulario #formulario button:hover{
+    background: #002d57;
+}
+.footer .contenido-formulario #formulario .mensaje-formulario{
+    width: 90%;
+    margin:auto;
+		text-align: center;
+    padding:20px;
+}
+.footer .contenido-formulario #formulario .mensaje-formulario p{
+    font-size:16px;
+		text-align: center;
+    color: #ffffff;
+    line-height: 35px;
+}
+.footer .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #494A53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #494A53;
+}
+.footer .footer-text p{
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.us p{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*  Perdón si eché a perder el formulario pasado :( 
+
+Estuve jugando un poco para medio aprender y poder ayudar
+Aquí dejo el código html de antes de que le cambiara...
+
+<div id="form">
+    <form action="/example.html" method="POST">
+      <h2>¡Contáctanos!</h2>
+      <h3> ¿Quieres saber más o tienes alguna pregunta o sugerencia?
+</h3>
+      <label for="Denunciante"> Nombre: </label>
+      <input type="text" id="Denunciante" name="Denunciante" placeholder="Escribe tu nombre" required>
+      <br>
+
+      <label for="Mensaje"> Mensaje: </label>
+      <textarea id="Mensaje" name="Mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+      <br>
+      <br>
+      <input type="submit" onclick="important()" value="ENVIAR INFORMACIÓN">
+      <input type="reset" value="BORRAR TODO">
+
+    </form>
+  </div>
+
+  <br>
+  <footer class="foot">
+    <p id="quote-final" class="foot"> EL CAMBIO EMPIEZA CONTIGO. ¡LUCHEMOS POR UN MÉXICO MEJOR! </p>
+  </footer>
+  
+
+*/
